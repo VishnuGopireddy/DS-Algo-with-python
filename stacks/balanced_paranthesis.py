@@ -1,11 +1,9 @@
-# Check for balanced paranthesis using stack
-
 '''
+Check for balanced paranthesis using stack
 Ex:
 1. {{}[]()[[]]} ----> Balanced
 2. [[[[{{{}}}]]]][ --> Not Balanced
 '''
-
 
 from stacks.stack import Stacks
 

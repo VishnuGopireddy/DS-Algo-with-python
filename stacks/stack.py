@@ -47,11 +47,11 @@ class Stacks():
 
 s = Stacks()
 
-s.push(1)
+'''s.push(1)
 s.push(2)
 s.push(3)
 print(s.get_items())
 print(s.isempty())
 s.pop()
 print(s.peek())
-print(s.get_items())
+print(s.get_items())'''

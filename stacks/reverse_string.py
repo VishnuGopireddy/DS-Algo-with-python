@@ -4,9 +4,11 @@ Perform reversing of a string using stack
 
 from stacks import stack
 s = stack.Stacks()
-string = 'vishnu'
 
+string = input("Enter a string to reverse")
+print(string)
 for i in string:
     s.push(i)
 
-print(s.get_items())
+while s.isempty() != True:
+    print(s.pop(),end='')
