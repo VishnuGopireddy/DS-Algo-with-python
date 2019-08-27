@@ -1,5 +1,5 @@
 
-class stacks():
+class Stacks():
     '''
     Basic operations with stack
     A stack is created with a list
@@ -45,7 +45,7 @@ class stacks():
         '''
         return self.items
 
-s = stacks()
+'''s = Stacks()
 
 s.push(1)
 s.push(2)
@@ -54,4 +54,4 @@ print(s.get_items())
 print(s.isempty())
 s.pop()
 print(s.peek())
-print(s.get_items())
+print(s.get_items())'''
