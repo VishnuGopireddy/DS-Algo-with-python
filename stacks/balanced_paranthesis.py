@@ -36,8 +36,8 @@ def bal_paranthesis(exp):
     else:
         return False
 
-#expression = input("Enter an Expression")
-exp = '{[[()]]}'
+exp = input("Enter an Expression")
+
 print(exp)
 print(bal_paranthesis(exp))
 
