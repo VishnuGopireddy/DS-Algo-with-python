@@ -7,7 +7,7 @@ Ex:
 '''
 
 
-from stack.stacks import Stacks
+from stacks.stack import Stacks
 
 s = Stacks()
 
