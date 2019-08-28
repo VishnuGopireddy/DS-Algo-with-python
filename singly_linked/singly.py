@@ -46,17 +46,22 @@ class single_linked:
             print(curr.data)
             curr = curr.next
 
-    def delete_item(self,item):
-        curr = self.head
-        last = self.head
-        if curr.data == item:
-            self.head = curr.next
-        else:
-            while(curr.next and curr.data != item):
-                last = curr
-                curr = curr.next
+        print('-'*100)
+    def delete_item(self,item,singly):
 
-            last.next = curr.next
+        if singly.find_item(item):
+            curr = self.head
+            last = self.head
+            if curr.data == item:
+                self.head = curr.next
+            else:
+                while (curr.next and curr.data != item):
+                    last = curr
+                    curr = curr.next
+                last.next = curr.next
+        else:
+            print("Entered element can't be deleted")
+
 
     def find_item(self,item):
         curr = self.head
@@ -73,7 +78,7 @@ s.append(3)
 s.append(10)
 s.append(100)
 s.insert_begin(1)
-#s.print_list()
 s.insert_pos(50,5)
-print(s.find_item(1))
+s.print_list()
+s.delete_item(250,s)
 s.print_list()
