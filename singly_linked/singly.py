@@ -112,6 +112,53 @@ class single_linked:
             count = count + 1
         return count
 
+    def print_reverse(self):
+        '''
+        Print a list in reversed order. List remains same
+        :return: None
+        '''
+        curr = self.head
+        l = []
+        while curr:
+            l.append(curr.data)
+            curr = curr.next
+        print(l[::-1])
+
+    def reverse_list(self):
+        '''
+        Reverses a linked list
+        :return:
+        '''
+
+        curr = self.head
+        prev = None
+        up = curr.next
+        while(up):
+            #print(curr.data)
+            curr.next = prev
+            prev = curr
+            curr = up
+            up = curr.next
+        curr.next = prev
+        self.head = curr
+
+    def count_occurances(self,item,singly):
+        '''
+        Count number of times item occures in the list
+        :param item: item of the list
+        :return: number of times item occured in the list
+        '''
+        count = 0
+        if singly.find_item(item):
+            curr = self.head
+            while(curr):
+                if curr.data == item:
+                    count = count + 1
+                curr = curr.next
+
+        return count
+
+
 s = single_linked()
 s.append(2)
 s.append(3)
@@ -119,7 +166,13 @@ s.append(10)
 s.append(100)
 s.insert_begin(1)
 s.insert_pos(50,5)
+s.append(100)
 s.print_list()
 #s.delete_item(250,s)
 print("Length is",s.length())
 s.print_list()
+#s.print_reverse()
+#s.reverse_list()
+#s.print_list()
+print(s.find_item(1))
+print(s.count_occurances(100,s))
