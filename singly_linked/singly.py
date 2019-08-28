@@ -46,6 +46,26 @@ class single_linked:
             print(curr.data)
             curr = curr.next
 
+    def delete_item(self,item):
+        curr = self.head
+        last = self.head
+        if curr.data == item:
+            self.head = curr.next
+        else:
+            while(curr.next and curr.data != item):
+                last = curr
+                curr = curr.next
+
+            last.next = curr.next
+
+    def find_item(self,item):
+        curr = self.head
+        while curr.next and curr.data != item:
+            curr = curr.next
+        if curr.data == item:
+            return True
+        else:
+            return False
 
 s = single_linked()
 s.append(2)
@@ -55,4 +75,5 @@ s.append(100)
 s.insert_begin(1)
 #s.print_list()
 s.insert_pos(50,5)
+print(s.find_item(1))
 s.print_list()
