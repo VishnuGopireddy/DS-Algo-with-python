@@ -22,6 +22,24 @@ class single_linked:
         temp.next = self.head
         self.head = temp
 
+    def insert_pos(self,item,pos):
+        '''
+        Insert at any arbitary position
+        :param item: Item to insert
+        :param pos: starts from 1 ie., begining
+        :return: None
+        '''
+
+        temp = Node(item)
+        i = 2
+        curr = self.head
+        while i<pos and curr.next != None:
+            curr = curr.next
+            i = i + 1
+        temp.next = curr.next
+
+        curr.next = temp
+
     def print_list(self):
         curr = self.head
         while curr:
@@ -35,4 +53,6 @@ s.append(3)
 s.append(10)
 s.append(100)
 s.insert_begin(1)
+#s.print_list()
+s.insert_pos(50,5)
 s.print_list()
