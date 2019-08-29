@@ -99,6 +99,7 @@ class single_linked:
         else:
             return False
 
+
     def length(self):
         '''
         Length of the list
