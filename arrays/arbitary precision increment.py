@@ -10,7 +10,6 @@ Example:
 '''
 
 num = "149"
-i
 num = [int(i) for i in num]
 
 
