@@ -57,9 +57,10 @@ class single_linked:
         '''
         curr = self.head
         while curr:
-            print(curr.data)
+            print(curr.data,end=' ')
             curr = curr.next
-        print('-'*100)
+        print()
+
 
     def delete_item(self,item,singly):
         '''
@@ -159,21 +160,3 @@ class single_linked:
 
         return count
 
-
-s = single_linked()
-s.append(2)
-s.append(3)
-s.append(10)
-s.append(100)
-s.insert_begin(1)
-s.insert_pos(50,5)
-s.append(100)
-s.print_list()
-#s.delete_item(250,s)
-print("Length is",s.length())
-s.print_list()
-#s.print_reverse()
-#s.reverse_list()
-#s.print_list()
-print(s.find_item(1))
-print(s.count_occurances(100,s))
