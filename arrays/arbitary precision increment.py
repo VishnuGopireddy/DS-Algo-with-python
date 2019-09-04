@@ -12,5 +12,3 @@ Example:
 num = "149"
 num = [int(i) for i in num]
 
-
-
