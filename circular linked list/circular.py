@@ -28,5 +28,7 @@ c = circular()
 c.append(10)
 c.append(15)
 c.append(20)
+c.append(35)
+c.append(40)
 c.print_list()
 
