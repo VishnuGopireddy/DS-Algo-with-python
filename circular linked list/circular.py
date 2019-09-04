@@ -13,7 +13,7 @@ class circular:
             self.head = new_node
         else:
             curr = self.head
-            while curr != self.head:
+            while curr.next != self.head:
                 curr = curr.next
             curr.next = new_node
         new_node.next = self.head
@@ -28,6 +28,5 @@ c = circular()
 c.append(10)
 c.append(15)
 c.append(20)
-
 c.print_list()
 
