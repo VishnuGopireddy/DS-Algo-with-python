@@ -30,13 +30,19 @@ class circular:
     def delete_item(self,item):
         if self.head == None:
             return False
-
+        elif self.head.data == item:
+            curr = self.head.next
+            prev = self.head
+            while curr != self.head:
+                prev = curr
+                curr = curr.next
+            prev.next = curr.next
+            self.head = self.head.next
         else:
             curr = self.head
             prev = curr
             while curr.next != self.head:
                 if curr.data == item:
-                    print("got")
                     prev.next = curr.next
                 prev = curr
                 curr = curr.next
@@ -49,7 +55,7 @@ c.append(25)
 c.print_list()
 c.delete_item(10)
 c.print_list()
-c.append(50)
+c.append(10)
 c.print_list()
 
 #print(c.head.data)
