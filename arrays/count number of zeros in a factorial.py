@@ -13,7 +13,6 @@ def get_array(num):
         num = num //10
     return arr
 
-
 def multiply(arr,num):
     carry = 0
     p = []
