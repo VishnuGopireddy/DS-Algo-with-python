@@ -11,5 +11,4 @@ class btree:
     def insert(self,data):
         if self.head == None:
             self.head = Node(data)
-        else:
 
