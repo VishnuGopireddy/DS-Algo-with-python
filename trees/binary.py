@@ -56,7 +56,6 @@ class BinaryTree:
                          \
                           150
 '''
-from queue import Queue
 b = BinaryTree(10)
 b.root.left = Node(15)
 b.root.right = Node(8)
