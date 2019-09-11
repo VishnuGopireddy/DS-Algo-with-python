@@ -31,15 +31,16 @@ class BinaryTree:
     def levelorder(self,start):
         if start is None:
             return
-        q = Queue()
-        q.put(start)
-        while q.qsize() > 0:
-            node = q.get()
+        q = []
+        q.append(start)
+        while len(q) > 0:
+            node = q.pop(0)
             print(node.value)
             if node.left:
-                q.put(node.left)
+                q.append(node.left)
             if node.right:
-                q.put(node.left)
+                q.append(node.right)
+
 '''
                 10
                /   \
@@ -66,4 +67,3 @@ b.postorder(b.root)
 
 print("Level order is :",end=' ')
 b.levelorder(b.root)
-
