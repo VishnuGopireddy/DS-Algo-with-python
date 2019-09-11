@@ -28,6 +28,18 @@ class BinaryTree:
             self.inorder(start.left)
             print(start.value)
             self.inorder(start.right)
+    def levelorder(self,start):
+        if start is None:
+            return
+        q = Queue()
+        q.put(start)
+        while q.qsize() > 0:
+            node = q.get()
+            print(node.value)
+            if node.left:
+                q.put(node.left)
+            if node.right:
+                q.put(node.left)
 '''
                 10
                /   \
@@ -35,6 +47,7 @@ class BinaryTree:
            / \        \            
          20   30       50 
 '''
+from queue import Queue
 b = BinaryTree(10)
 b.root.left = Node(15)
 b.root.right = Node(8)
@@ -51,4 +64,6 @@ b.inorder(b.root)
 print("Post-order is :",end=' ')
 b.postorder(b.root)
 
+print("Level order is :",end=' ')
+b.levelorder(b.root)
 
