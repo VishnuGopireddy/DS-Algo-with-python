@@ -35,7 +35,6 @@ class BinaryTree:
         q.put(start)
         while q.qsize() > 0:
             node = q.get()
-
             print(node.value)
             if node.left:
                 q.put(node.left)
