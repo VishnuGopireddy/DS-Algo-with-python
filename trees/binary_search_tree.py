@@ -46,11 +46,11 @@ class BST:
     def _find(self,data,curr):
         if curr.data == data:
             return True
-        elif data < curr.data and curr.left :
-            return _find(data,curr.left)
+        elif data < curr.data and curr.left:
+            return self._find(data,curr.left)
 
         elif data > curr.data and curr.right:
-            return _find(data, curr.right)
+            return self._find(data, curr.right)
 
     def preorder(self,start):
         if start:
@@ -67,4 +67,4 @@ bst.insert(20)
 bst.insert(8)
 bst.insert(18)
 bst.preorder(bst.root)
-#bst.find(15)
+bst.find(5)
