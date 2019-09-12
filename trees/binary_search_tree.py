@@ -43,6 +43,7 @@ class BST:
             print("value is not present")
 
 
+
     def _find(self,data,curr):
         if curr.data == data:
             return True
