@@ -42,6 +42,13 @@ class BST:
         else:
             print("value is not present")
 
+    def delete(self,data):
+        if self.find(data):
+            #delete logic
+
+
+        else:
+            print("Can't delete element not found")
 
     def _find(self,data,curr):
         if curr.data == data:
