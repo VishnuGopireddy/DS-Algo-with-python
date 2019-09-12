@@ -59,6 +59,14 @@ class BST:
             self.preorder(start.right)
         return
 
+    def inorder(self,start):
+        if start:
+            self.inorder(start.left)
+            print(start.data)
+            self.inorder(start.right)
+        return
+
+
 bst = BST()
 bst.insert(5)
 bst.insert(2)
@@ -66,5 +74,8 @@ bst.insert(15)
 bst.insert(20)
 bst.insert(8)
 bst.insert(18)
+print("Pre-order is :")
 bst.preorder(bst.root)
+print("Inorder is :")
+bst.inorder(bst.root)
 bst.find(5)
