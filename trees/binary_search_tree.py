@@ -44,7 +44,7 @@ class BST:
 
     def delete(self,data):
         if self.find(data):
-            #delete logi
+            #delete logic
 
         else:
             print("Can't delete element not found")
