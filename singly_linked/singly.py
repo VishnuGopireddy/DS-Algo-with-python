@@ -39,7 +39,6 @@ class single_linked:
         :param pos: starts from 1 ie., begining
         :return: None
         '''
-
         temp = Node(item)
         i = 2
         curr = self.head
