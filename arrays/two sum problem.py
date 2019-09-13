@@ -8,7 +8,6 @@
 def two_sum(arr,len,s):
     start = 0
     end = len - 1
-
     while arr[start] + arr[end] != s and start < end:
         if arr[start] + arr[end] < s:
             start = start + 1
