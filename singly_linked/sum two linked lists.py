@@ -7,7 +7,6 @@
 #---------
 # For simplicity we assume length of both lists are equal and sum of lists in reverse order
 from singly_linked.singly import single_linked
-
 def sum_list(l1,l2):
     l1 = l1.head
     l2 = l2.head
