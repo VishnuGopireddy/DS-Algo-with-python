@@ -81,6 +81,7 @@ class BST:
 
 bst = BST()
 bst.insert(5)
+
 bst.insert(2)
 bst.insert(15)
 bst.insert(20)
