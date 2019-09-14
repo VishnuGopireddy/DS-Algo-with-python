@@ -51,7 +51,21 @@ class BST:
                 parent.right = None
             else:
                 parent.left = None
-        elif child.left == None or
+        #case 2 = single child
+        elif child.left == None or child.right == None:
+            if data > parent.data:
+                if child.left:
+                    parent.left = child.left
+                else:
+                    parent.left = child.right
+
+            else:
+                if child.left:
+                    parent.right = child.left
+                else:
+                    parent.right = child.right
+
+
 
 
 
@@ -116,4 +130,5 @@ bst.insert(18)
 #print("Inorder is :")
 #bst.inorder(bst.root)
 #bst.find(50)
-bst.delete(18)
+bst.delete(20)
+bst.preorder(bst.root)
