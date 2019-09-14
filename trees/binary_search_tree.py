@@ -43,10 +43,34 @@ class BST:
             print("value is not present")
 
     def delete(self,data):
-        parent,child = self.get_parent(self.root,data)
-        print(parent.data,child)
+        parent, child = self.get_parent1(data)
+        print(parent.data, child.data)
+        #case 1 = leaf
+        if child.left == None and child.right == None:
+            if data > parent.data:
+                parent.right = None
+            else:
+                parent.left = None
+        elif child.left == None or
 
-    def get_parent(Kself,parent,child):
+
+
+    def get_parent1(self,data):
+        if self.root.data == data:
+            return self.root,self.root
+        else:
+            parent,child = self.root, self.root
+            while child.data != data:
+                if child.data > data:
+                    parent = child
+                    child = child.left
+                elif child.data < data:
+                    parent = child
+                    child = child.right
+
+            return parent,child
+
+    def get_parent(self,parent,child):
         if parent:
             if parent.left and parent.left.data == child:
                 return parent,child
