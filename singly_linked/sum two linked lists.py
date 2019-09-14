@@ -1,5 +1,5 @@
 # Sum of two linked lists
-# Ex:
+# Ex1:
 #   126
 # + 987
 # -------
