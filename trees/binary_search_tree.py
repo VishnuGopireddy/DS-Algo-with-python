@@ -150,6 +150,5 @@ bst.insert(18)
 #bst.inorder(bst.root)
 #bst.find(50)
 bst.delete(5)
-
 #print(bst.root.right.right.left.data)
 bst.preorder(bst.root)
