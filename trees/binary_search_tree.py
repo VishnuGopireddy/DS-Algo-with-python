@@ -43,11 +43,17 @@ class BST:
             print("value is not present")
 
     def delete(self,data):
-        if self.find(data):
-            #delete logic
+        parent,child = self.get_parent(self.root,data)
+        print(parent.data,child)
 
-        else:
-            print("Can't delete element not found")
+    def get_parent(Kself,parent,child):
+        if parent:
+            if parent.left and parent.left.data == child:
+                return parent,child
+            if parent.right and parent.right.data == child:
+                return parent,child
+            else:
+                return self.get_parent(parent.left,child) or self.get_parent(parent.right,child)
 
     def _find(self,data,curr):
         if curr.data == data:
@@ -80,8 +86,9 @@ bst.insert(15)
 bst.insert(20)
 bst.insert(8)
 bst.insert(18)
-print("Pre-order is :")
-bst.preorder(bst.root)
-print("Inorder is :")
-bst.inorder(bst.root)
-bst.find(5)
+#print("Pre-order is :")
+#bst.preorder(bst.root)
+#print("Inorder is :")
+#bst.inorder(bst.root)
+#bst.find(50)
+bst.delete(18)
