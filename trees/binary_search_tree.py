@@ -67,7 +67,16 @@ class BST:
         else:
             #case3 --> node with two children
             current = self.get_min_right(child)
+            self.delete(current.data)
+            print('-->',current.data)
+            if data > parent.data:
+                parent.right = current
+            else:
+                parent.left = current
 
+            current.left, current.right = child.left, child.right
+            if child == self.root:
+                self.root = current
 
     def get_min_right(self,current):
 
@@ -142,4 +151,5 @@ bst.insert(18)
 #bst.find(50)
 bst.delete(15)
 
+#print(bst.root.right.right.left.data)
 bst.preorder(bst.root)
