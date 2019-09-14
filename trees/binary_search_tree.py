@@ -71,12 +71,12 @@ class BST:
             print('-->',current.data)
             if data > parent.data:
                 parent.right = current
-            else:
+            elif data < parent.data:
                 parent.left = current
+            else:
+                self.root = current
 
             current.left, current.right = child.left, child.right
-            if child == self.root:
-                self.root = current
 
     def get_min_right(self,current):
 
@@ -149,7 +149,7 @@ bst.insert(18)
 #print("Inorder is :")
 #bst.inorder(bst.root)
 #bst.find(50)
-bst.delete(15)
+bst.delete(5)
 
 #print(bst.root.right.right.left.data)
 bst.preorder(bst.root)
