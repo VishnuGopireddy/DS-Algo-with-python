@@ -55,18 +55,28 @@ class BST:
         elif child.left == None or child.right == None:
             if data > parent.data:
                 if child.left:
-                    parent.left = child.left
-                else:
-                    parent.left = child.right
-
-            else:
-                if child.left:
                     parent.right = child.left
                 else:
                     parent.right = child.right
 
+            else:
+                if child.left:
+                    parent.left = child.left
+                else:
+                    parent.left = child.right
+        else:
+            #case3 --> node with two children
+            current = self.get_min_right(child)
 
 
+    def get_min_right(self,current):
+
+        while current.left != None or current.right != None:
+            if current.right:
+                current = current.right
+            elif current.left:
+                current = current.left
+        return current
 
 
     def get_parent1(self,data):
@@ -130,5 +140,6 @@ bst.insert(18)
 #print("Inorder is :")
 #bst.inorder(bst.root)
 #bst.find(50)
-bst.delete(20)
+bst.delete(15)
+
 bst.preorder(bst.root)
