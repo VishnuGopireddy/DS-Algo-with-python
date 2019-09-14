@@ -54,6 +54,7 @@ class BST:
                 return parent,child
             else:
                 return self.get_parent(parent.left,child) or self.get_parent(parent.right,child)
+
     def _find(self,data,curr):
         if curr.data == data:
             return True
