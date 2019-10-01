@@ -14,7 +14,6 @@ def binarysearch(my_list,ele,low=0,high=n):
             return binarysearch(my_list, ele, low=mid+1, high=high)
     else:
         return False
-
 mid = binarysearch(my_list,ele,0,n-1)
 if mid:
     print(ele,'is found at position',mid)
