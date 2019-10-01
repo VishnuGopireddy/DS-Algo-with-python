@@ -2,11 +2,12 @@
 
 my_list = [1,4,8,9,12,16,19,25,29,35]
 
-ele = 25
+ele = 35
 n = len(my_list)
+
 def binarysearch(my_list,ele,low=0,high=n):
     mid = (low + high) // 2
-    if low < high:
+    if low <= 0 and high>=n:
         if my_list[mid] == ele:
             return mid
         elif ele < my_list[mid]:
@@ -15,7 +16,9 @@ def binarysearch(my_list,ele,low=0,high=n):
             return binarysearch(my_list, ele, low=mid, high=high)
     else:
         return False
-if binarysearch(my_list,ele,0,n):
+
+mid = binarysearch(my_list,ele,0,n)
+if mid:
     print(ele,'is found at position',mid)
 else:
     print('Element fot found')
