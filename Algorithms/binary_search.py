@@ -2,18 +2,18 @@
 
 my_list = [1,4,8,9,12,16,19,25,29,35]
 
-ele = 35
-n = len(my_list)
+ele = 4
+n = len(my_list) - 1
 
 def binarysearch(my_list,ele,low=0,high=n):
-    mid = (low + high) // 2
-    if low <= 0 and high>=n:
+    if high >= low:
+        mid = (low + high-1) // 2
         if my_list[mid] == ele:
             return mid
         elif ele < my_list[mid]:
-            return binarysearch(my_list,ele,low=0,high=mid)
+            return binarysearch(my_list,ele,low=0,high=mid-1)
         else:
-            return binarysearch(my_list, ele, low=mid, high=high)
+            return binarysearch(my_list, ele, low=mid+1, high=high)
     else:
         return False
 
