@@ -1,4 +1,5 @@
 #COUNT CONSTANTS in a string
+#we consider ' ' also as a consonent
 
 #recursion
 
