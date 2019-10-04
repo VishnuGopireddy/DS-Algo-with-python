@@ -1,5 +1,8 @@
 '''
-INSERTION SORT
+INSERTION SORT: Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands.
+
+Worst case: O(n^2)
+Best case: O(n)
 '''
 
 arr = [5, 6, 1, 7, 0, 4, 12, 10, 9]
