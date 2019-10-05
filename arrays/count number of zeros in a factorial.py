@@ -11,6 +11,8 @@ def get_array(num):
     :param num:
     :return:
     """
+
+
     arr = []
     while num >0:
         arr.append(num % 10)
