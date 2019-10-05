@@ -7,9 +7,6 @@ Best case: O(n)
 
 arr = [5, 6, 1, 7, 0, 4, 12, 10, 9]
 
-
-
-
 n = len(arr)
 def insersion(arr):
     for i in range(1, n):
