@@ -1,5 +1,10 @@
 '''
-Quick sort:
+Quick sort: DIVIDE and CONQURE
+i,j at start and pivot at end
+
+BEST CASE: O(nlogn)
+AVG CASE: O(nlogn)
+WORST CASE: O(n^2)
 '''
 arr = [7,2,1,6,8,5,3,4]
 n = len(arr)
