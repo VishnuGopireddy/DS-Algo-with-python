@@ -2,8 +2,9 @@
 '''
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
 
-Worst and Average Case Time Complexity: O(n*n). Worst case occurs when array is reverse sorted.
-Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
+BEST CASE: O(n)
+AVG CASE: O(n^2)
+WORST CASE: O(n^2)
 '''
 
 arr = [5, 6, 1, 7, 0, 4, 12, 10, 9]

@@ -1,9 +1,10 @@
 '''
 Search for the least element and place it in the begining.
 
-BEST CASE: O(n)
+BEST CASE: O(n*2)
 AVG CASE: O(n^2)
-WORST CASE: O(n^2)'''
+WORST CASE: O(n^2)
+'''
 
 arr = [5, 6, 1, 7, 0, 4, 12, 10, 9]
 n = len(arr)

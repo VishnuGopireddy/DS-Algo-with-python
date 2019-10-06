@@ -1,9 +1,10 @@
 '''
-Insertion Sort: Search for the least element and place it in the begining.
+Insertion Sort: Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands.
 
 BEST CASE: O(n)
 AVG CASE: O(n^2)
 WORST CASE: O(n^2)
+
 
 '''
 
