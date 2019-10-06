@@ -13,6 +13,5 @@ def selection(arr,n):
                 min = j
         arr[i],arr[min] = arr[min],arr[i]
 
-
 selection(arr,n)
 print(arr)
