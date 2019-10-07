@@ -1,28 +1,44 @@
+'''
+soves with divide and conquer.
+
+BEST CASE: O(nlogn)
+AVG CASE: O(nlogn)
+WORST CASE: O(nlogn)
+
+SPACE : O(n)
+
+'''
+
 arr = [5, 6, 1, 7, 0, 4, 12, 10, 9]
 n = len(arr)
-def mergesort(arr,low=0,high=n):
-    if low < high
-        mid = (low + high) // 2
-        mergesort(low, mid)
-        mergesort(mid, high)
+def mergesort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        left_arr = arr[:mid]
+        right_arr = arr[mid:]
+        mergesort(left_arr)
+        mergesort(right_arr)
 
-def merge(arr1,arr2):
-    i, j = 0, 0
-    new_arr = []
-    l1,l2 = len(arr1), len(arr2)
-    while i < l1 and j < l2:
-        if arr1[i] < arr2[j]:
-            new_arr.append(arr1[i])
+        i, j, k = 0, 0, 0
+
+        l1, l2 = len(left_arr), len(right_arr)
+        while i < l1 and j < l2:
+            if left_arr[i] < right_arr[j]:
+                arr[k] = left_arr[i]
+                i = i + 1
+                k = k + 1
+            else:
+                arr[k] = right_arr[j]
+                j = j + 1
+                k = k + 1
+        while i < l1:
+            arr[k] = left_arr[i]
             i = i + 1
-        else:
-            new_arr.append(arr2[j])
+            k = k + 1
+        while j < l2:
+            arr[k] = right_arr[j]
             j = j + 1
-    while i < l1:
-        new_arr.append(arr1[i])
-        i = i + 1
-    while j < l2:
-        new_arr.append(arr2[j])
-        j = j + 1
-    return new_arr
+            k = k +1
 
-print(merge(arr1,arr2))
+mergesort(arr)
+print(arr)
