@@ -35,5 +35,4 @@ def fractioanl_knapsack(values, weights,capacity):
 wt = [10, 40, 20, 30]
 val = [60, 40, 100, 120]
 capacity = 50
-
 fractioanl_knapsack(val, wt, capacity)
