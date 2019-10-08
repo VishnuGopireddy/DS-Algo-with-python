@@ -24,7 +24,6 @@ def fractioanl_knapsack(values, weights,capacity):
     #Fill knapsack
     tot_value = 0
     for i in profit_weight:
-
         if capacity - profit_weight[i][1] > 0:
             capacity = capacity - profit_weight[i][1]
             tot_value = tot_value + profit_weight[i][0]
