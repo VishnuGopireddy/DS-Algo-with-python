@@ -15,7 +15,7 @@ Input:
 def fractioanl_knapsack(values, weights,capacity):
     '''
     :param items: two lists values and weight:
-    :return: A list of optimal portions of items selected.
+    :return: Total value of profits .
     '''
     #take p/e dictionay
     profit_weight = {i/j:[i,j] for i,j in zip(values,weights)}
@@ -33,8 +33,8 @@ def fractioanl_knapsack(values, weights,capacity):
             capacity = capacity - (profit_weight[i][1] * fraction)
     print(tot_value)
 
-values = [60,100,120]
-weights = [10,20,30]
+wt = [10, 40, 20, 30]
+val = [60, 40, 100, 120]
 capacity = 50
 
-fractioanl_knapsack(values,weights,capacity)
+fractioanl_knapsack(val, wt, capacity)
