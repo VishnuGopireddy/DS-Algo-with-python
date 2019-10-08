@@ -9,6 +9,7 @@ Input:
   Items as (value, weight) pairs
   arr[] = {{60, 10}, {100, 20}, {120, 30}}
   Knapsack Capacity, W = 50;
+Time Complexity: O(nlogn) + O(n)
 '''
 
 def fractioanl_knapsack(values, weights,capacity):
