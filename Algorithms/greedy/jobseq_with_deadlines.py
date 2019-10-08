@@ -6,6 +6,7 @@ How to maximize total profit if only one job can be scheduled at a time.
 
 def jobseq(arr):
     pass
+    pass
 
 arr = [['a', 2, 100], # Job Array
        ['b', 1, 19],
