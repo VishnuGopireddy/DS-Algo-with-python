@@ -11,7 +11,6 @@ Input:
   Knapsack Capacity, W = 50;
 '''
 
-
 def fractioanl_knapsack(values, weights,capacity):
     '''
     :param items: two lists values and weight:
