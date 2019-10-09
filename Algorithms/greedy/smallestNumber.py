@@ -12,7 +12,7 @@ nums = [[9,2],[20,3],[63,3]]
 for i in nums:
     tot_sum = i[0]
     digits = i[1]
-    if tot_sumsum > digits * 9:
+    if tot_sum > digits * 9:
         # sum exceeds
         print('-1')
     else:
