@@ -5,7 +5,11 @@ How to maximize total profit if only one job can be scheduled at a time.
 '''
 
 def jobseq(arr):
-    pass
+    chart = [0 for i in range(4)]
+    jobs = {i[2]:[i[0],i[1]] for i in arr}
+    jobs = sorted(jobs.items(),reverse=True)
+
+
 
 arr = [['a', 2, 100], # Job Array
        ['b', 1, 19],
@@ -14,3 +18,4 @@ arr = [['a', 2, 100], # Job Array
        ['e', 3, 15]]
 
 
+jobseq(arr)
