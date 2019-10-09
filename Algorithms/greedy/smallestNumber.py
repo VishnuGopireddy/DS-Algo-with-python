@@ -10,20 +10,20 @@ kases = 3
 nums = [[9,2],[20,3],[63,3]]
 
 for i in nums:
-    sum = i[0]
+    tot_sum = i[0]
     digits = i[1]
-    if sum > digits * 9:
+    if tot_sumsum > digits * 9:
         # sum exceeds
         print('-1')
     else:
         dig = []
         while digits > 0:
             digits = digits - 1
-            rem = sum - (digits * 9)
+            rem = tot_sum - (digits * 9)
             if rem <= 0:
                 dig.append(1)
-                sum = sum - 1
+                tot_sum = tot_sum - 1
             else:
                 dig.append(rem)
-                sum = sum - rem
+                tot_sum = tot_sum - rem
         print(dig)
