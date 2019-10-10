@@ -5,5 +5,3 @@ for kase in range(kases):
     n = int(input())
     tasty = list(map(int,input().split(' ')))
     print(min(tasty))
-
-
