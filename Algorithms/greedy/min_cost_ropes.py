@@ -18,5 +18,5 @@ def min_cost_ropes(ropes,n):
 kases = int(input())
 for kase in range(kases):
     n = int(input())
-    ropes = list(map(int, input().split()))
-    print(min_cost_ropes(ropes, n))
+    ropes = list(map(int,input().split()))
+    print(min_cost_ropes(ropes,n))
