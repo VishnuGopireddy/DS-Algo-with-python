@@ -1,0 +1,1 @@
+Please note that XOR of two elements is 0 if both elements are same and XOR of a number x with 0 is x.
