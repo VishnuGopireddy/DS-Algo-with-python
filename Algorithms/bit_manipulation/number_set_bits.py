@@ -8,3 +8,7 @@ def count_set_bits(n)
     :return: count as integer
     '''
     return bin(n).count('1')
+
+n = input('enter a number')
+count = count_set_bits(n)
+print(count)
