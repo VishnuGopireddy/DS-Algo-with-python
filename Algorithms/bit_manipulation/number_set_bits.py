@@ -9,6 +9,7 @@ def count_set_bits(n):
     '''
     return bin(n).count('1')
 
+
 n = int(input('enter a number'))
 count = count_set_bits(n)
 print(count)
