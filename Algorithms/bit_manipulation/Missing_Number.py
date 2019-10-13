@@ -11,13 +11,16 @@ Using XOR:
 '''
 
 def get_missing(arr):
-    n = len(n)
-    x1, x2 = 0, 0
-    for i in range(len(arr)):
-        x1 = x1 ^ i
+    n = len(arr)
+    x1, x2 = 1, arr[0]
+    for i in range(1,n):
         x2 = x2 ^ arr[i]
+
+    for i in range(2,n+2):
+        x1 = x1 ^ (i)
 
     return x1 ^ x2
 
-
+arr = [1, 2, 4, 6, 3, 7, 8]
+print(get_missing(arr))
 
