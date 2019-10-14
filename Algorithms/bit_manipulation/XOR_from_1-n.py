@@ -10,6 +10,9 @@ case 2: If n % 4 == 1 then return 1
 case 3: If n % 4 == 2 then return n + 1
 case 4: If n % 4 == 3 then return 0
 '''
+
+
+
 def XOR_1_to_n(n):
     '''
     Calculates XOR from 1 to n
