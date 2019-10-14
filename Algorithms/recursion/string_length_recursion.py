@@ -10,6 +10,10 @@ print(count)
 
 #recursive
 
+
+
+
+
 def word_count(st):
     if st:
         return 1 + word_count(st[1:])
