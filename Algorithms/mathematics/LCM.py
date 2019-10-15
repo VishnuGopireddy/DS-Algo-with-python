@@ -9,6 +9,11 @@ An efficient solution is based on below formula for LCM of two numbers ‘a’ a
 '''
 
 def gcd(a,b):
+    '''
+    :param a: int
+    :param b: int
+    :return: GCD of a and b
+    '''
     if a == 0:
         return b
     if b == 0:
