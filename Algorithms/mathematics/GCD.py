@@ -12,4 +12,6 @@ def gcd(a,b):
         return a
     else:
         if a > b:
-            return
+            return gcd(a-b,b)
+        else:
+            return gcd(a,b-a)
