@@ -21,4 +21,4 @@ def gcd(a,b):
 
 a = 36
 b = 13
-print('GCD of %d and %d is %d' % (a, b, gcd(13,36)))
+print('GCD of %d and %d is %d' % (a, b, gcd(a, b)))
