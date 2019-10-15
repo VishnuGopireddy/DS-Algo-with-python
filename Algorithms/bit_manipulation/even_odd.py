@@ -7,6 +7,10 @@ Ex:
     15 --> 1111
 '''
 def isodd(n):
+    '''
+    :param n: Integer
+    :return: 1 for odd number, 0 for even
+    '''
     return 1 if bin(n)[-1] == '1' else 0
 
 n = int(input('enter a number'))
