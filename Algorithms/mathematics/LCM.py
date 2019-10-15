@@ -25,4 +25,4 @@ def lcm(a,b):
 
 a = 15
 b = 30
-print()
+print('LCM of %d and %d is %d'%(a,b,lcm(a,b)))
