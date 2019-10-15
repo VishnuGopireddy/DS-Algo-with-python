@@ -26,6 +26,11 @@ def gcd(a,b):
         else:
             return gcd(a,b-a)
 def lcm(a,b):
+    '''
+    :param a: int
+    :param b: int
+    :return: lcm of a and b
+    '''
     return (a*b)/gcd(a,b)
 
 a = 15
