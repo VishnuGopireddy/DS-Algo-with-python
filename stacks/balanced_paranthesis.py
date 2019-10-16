@@ -4,11 +4,8 @@ Ex:
 1. {{}[]()[[]]} ----> Balanced
 2. [[[[{{{}}}]]]][ --> Not Balanced
 '''
-
 from stacks.stack import Stacks
-
 s = Stacks()
-
 def is_match(p1,p2):
     if p1 == '{' and p2 == '}':
         return True
