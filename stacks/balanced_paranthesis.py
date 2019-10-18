@@ -4,6 +4,8 @@ Ex:
 1. {{}[]()[[]]} ----> Balanced
 2. [[[[{{{}}}]]]][ --> Not Balanced
 '''
+
+
 from stacks.stack import Stacks
 s = Stacks()
 def is_match(p1,p2):
@@ -15,6 +17,7 @@ def is_match(p1,p2):
         return True
     else:
         return False
+
 
 def bal_paranthesis(exp):
     for i in exp:
