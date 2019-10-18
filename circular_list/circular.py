@@ -27,6 +27,7 @@ class circular_list:
             curr = curr.next
         print(curr.data)
         print('-'*100)
+
     def delete_item(self,item):
         if self.head == None:
             return False
@@ -55,6 +56,7 @@ class circular_list:
 #c.append(25)
 #c.print_list()
 #c.delete_item(10)
+
 #c.print_list()
 #c.append(10)
 #c.print_list()
