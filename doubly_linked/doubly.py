@@ -1,8 +1,10 @@
 class Node:
+
     def __init__(self,data):
         self.data = data
         self.next = None
         self.prev = None
+
 
 class double_linked:
     def __init__(self):
