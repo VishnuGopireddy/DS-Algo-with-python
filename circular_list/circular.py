@@ -3,6 +3,8 @@ class Node:
         self.data = data
         self.next = None
 
+
+
 class circular_list:
     def __init__(self):
         self.head = None
@@ -65,3 +67,5 @@ class circular_list:
 #print(c.head.next.data)
 #print(c.head.next.next.data)
 #print(c.head.next.next.next.data)
+
+
