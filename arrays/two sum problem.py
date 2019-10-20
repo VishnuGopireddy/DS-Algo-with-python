@@ -5,6 +5,7 @@
 
 #APPROACH 2: O(n)
 
+
 def two_sum(arr,len,s):
     start = 0
     end = len - 1
