@@ -5,7 +5,6 @@ class Node:
         self.next = None
         self.prev = None
 
-
 class double_linked:
     def __init__(self):
         self.head = None
@@ -44,6 +43,7 @@ class double_linked:
         temp.next = curr.next
         curr.next.prev = temp
         curr.next = temp
+
 
     def find_item(self,item):
         curr = self.head
