@@ -1,12 +1,9 @@
 # Given a sorted array find two indices of the elements that add up to the given number
 # Under a constraint that no two elemets are repeating
 
-
-
 #APPROACH 1: O(n^2) BruteForce - Try with all possible combinations
 
 #APPROACH 2: O(n)
-
 
 def two_sum(arr,len,s):
     start = 0
