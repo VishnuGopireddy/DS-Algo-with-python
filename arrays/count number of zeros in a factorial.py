@@ -2,6 +2,8 @@
 # Count number of zeros in a factorial of large number
 
 # Sol:
+
+
 #       Take all the multiplications in an array.
 # Ex:
 #   6! = [7,2,0]
