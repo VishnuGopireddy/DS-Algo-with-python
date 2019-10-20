@@ -1,6 +1,8 @@
 # Problem:
 # Get last/first k digits of a factorial of large number
 
+
+
 # Sol:
 #       Take all the multiplications in an array.
 # Ex:
