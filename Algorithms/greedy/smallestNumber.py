@@ -9,8 +9,6 @@ This can be solved using greedy algorithm
 kases = 3
 nums = [[9,2],[20,3],[63,3]]
 
-
-
 for i in nums:
     tot_sum = i[0]
     digits = i[1]
