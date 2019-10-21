@@ -16,7 +16,6 @@ for i in nums:
         # sum exceeds
         print('-1')
 
-
     else:
         dig = []
         while digits > 0:
