@@ -15,7 +15,6 @@ for i in nums:
     if tot_sum > digits * 9:
         # sum exceeds
         print('-1')
-
     else:
         dig = []
         while digits > 0:
