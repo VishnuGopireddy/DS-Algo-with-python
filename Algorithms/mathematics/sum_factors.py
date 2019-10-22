@@ -29,4 +29,16 @@ def sum_primefactors(num):
     :param num: num
     :return:  sum of factors
     '''
-print(sum_primefactors(12))
+    prime_factors = primefactors(num)
+    counts = {i:prime_factors.count(i) for i in prime_factors}
+    tot_sum = 1
+    print(counts)
+    for i in counts.keys():
+        t = 1
+        for j in range(1,counts[i]+1):
+            print(i,j)
+            t = t + (i**j)
+        tot_sum = t * tot_sum
+    print(tot_sum)
+
+sum_primefactors(1100)
