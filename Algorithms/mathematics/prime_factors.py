@@ -17,10 +17,9 @@ def primefactors(num):
     while num > 1:
         for i in range(2, ceil(sqrt(n))+1, 1):
             if num % i == 0:
-                print(num,i)
                 num = num // i
                 primes.append(i)
                 break
     return primes
 
-print(primefactors(25))
+print(primefactors(125))
