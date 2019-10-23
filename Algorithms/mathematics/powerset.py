@@ -16,5 +16,6 @@ def powerset(set):
                 print(set[j], end='')
         print(' ')
 
+
 set = ['a', 'b', 'c']
 powerset(set)
