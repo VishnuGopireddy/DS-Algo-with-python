@@ -13,7 +13,7 @@ def primefactors(num):
     :param num: int
     :return: list of prime factor
     '''
-    from math import  sqrt, ceil
+    from math import sqrt, ceil
     primes = []
     n = num
     while num > 1:
