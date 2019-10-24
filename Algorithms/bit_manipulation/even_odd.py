@@ -13,5 +13,7 @@ def isodd(n):
     '''
     return 1 if bin(n)[-1] == '1' else 0
 
+
+
 n = int(input('enter a number'))
 print(isodd(n))
