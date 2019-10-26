@@ -8,6 +8,8 @@ Output : 28
 All factors of 12 are: 1,2,3,4,6,12
 '''
 
+
+
 def primefactors(num):
     '''
     :param num: int
