@@ -6,7 +6,6 @@ For example S = {a, b, c} then P(s) = {{}, {a}, {b}, {c}, {a,b}, {a, c}, {b, c},
 If S has n elements in it then P(s) will have 2^n elements
 '''
 
-
 def powerset(set):
     set_size = len(set)
     power_set_size = 2 ** set_size
