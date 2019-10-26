@@ -19,6 +19,7 @@ class circular_list:
             curr.next = new_node
             new_node.next = self.head
 
+
     def print_list(self):
         curr = self.head
         while curr.next is not self.head:
@@ -26,6 +27,7 @@ class circular_list:
             curr = curr.next
         print(curr.data)
         print('-'*100)
+
     def delete_item(self,item):
         if self.head == None:
             return False
@@ -37,6 +39,7 @@ class circular_list:
                 curr = curr.next
             prev.next = curr.next
             self.head = self.head.next
+
         else:
             curr = self.head
             prev = curr
@@ -53,10 +56,14 @@ class circular_list:
 #c.append(25)
 #c.print_list()
 #c.delete_item(10)
+
 #c.print_list()
 #c.append(10)
 #c.print_list()
+
 #print(c.head.data)
 #print(c.head.next.data)
 #print(c.head.next.next.data)
 #print(c.head.next.next.next.data)
+
+

@@ -22,6 +22,8 @@ class single_linked:
                 last_node = last_node.next
             last_node.next = Node(item)
 
+
+
     def insert_begin(self,item):
         '''
         Inserts an element at the begining of the list

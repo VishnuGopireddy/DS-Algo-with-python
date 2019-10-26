@@ -6,25 +6,12 @@ In Fractional Knapsack, we can break items for maximizing the total value of kna
 This problem in which we can break an item is also called the fractional knapsack problem.
 
 Input:
+
   Items as (value, weight) pairs
   arr[] = {{60, 10}, {100, 20}, {120, 30}}
   Knapsack Capacity, W = 50;
 Time Complexity: O(nlogn) + O(n)
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 def fractioanl_knapsack(values, weights,capacity):
     '''
