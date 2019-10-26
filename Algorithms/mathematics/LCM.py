@@ -8,6 +8,7 @@ An efficient solution is based on below formula for LCM of two numbers ‘a’ a
    LCM(a, b) = (a x b) / GCD(a, b)
 '''
 
+
 def gcd(a,b):
     '''
     :param a: int
