@@ -11,8 +11,6 @@ def binarysearch(my_list,ele,low=0,high=n):
         elif ele < my_list[mid]:
             return binarysearch(my_list,ele,low=0,high=mid-1)
         else:
-
-
             return binarysearch(my_list, ele, low=mid+1, high=high)
     else:
         return False
