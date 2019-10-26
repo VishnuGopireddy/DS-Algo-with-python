@@ -7,7 +7,6 @@ The idea is, GCD of two numbers doesn’t change if smaller number is subtracted
 '''
 
 
-
 def gcd(a,b):
     '''
     :param a: int
