@@ -22,6 +22,7 @@ return max_so_far
 Time Complexity: O(n)
 '''
 
+
 def kadane(arr):
     n = len(arr)
     index, max_sum, curr_sum = -1, 0, 0
