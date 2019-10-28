@@ -56,7 +56,7 @@ def largest_sub_matrix(mat, size):
                 sol[i][j] = 0
     return max_sub
 
-size = (5,4)
-mat = [[1, 1, 1, 1], [0, 0, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
+size = (5,5)
+mat = [[1, 1, 1, 1, 1], [0, 1, 1, 1, 1], [1, 1, 1, 1, 1], [0, 1, 1, 0, 1], [0, 0, 1, 1, 1]]
 
 print (largest_sub_matrix(mat, size))
