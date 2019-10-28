@@ -23,4 +23,4 @@ def primefactors(num):
     return primes
 
 
-print(primefactors(125))
+print(primefactors(16904))
