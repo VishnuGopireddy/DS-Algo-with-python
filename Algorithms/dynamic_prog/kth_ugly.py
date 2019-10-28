@@ -10,8 +10,30 @@ Approach 2: Dynamic Programming
 
 if x is an ugly number then next number is always min(x*2, x*3, x*5)
 '''
-def get_kthugly(k):
+def get_kthugly(kth):
     '''
     :param k: integer
     :return: kth ugly number
     '''
+    ugly = [1]
+    i2, i3, i5 = 0
+    next_2 = 2
+    next_3 = 3
+    next_5 = 5
+    #current = [ugly[i] * 2, ugly[i] * 3, ugly[i] * 5]
+    for i in range(1, kth):
+        ugly.append(min(next_2, next_3, next_5))
+        if ugly[i] == next_2:
+            next_2 = next_2 *
+        if min(x, y, z) is y:
+            ugly.append(y)
+            j = j + 1
+        if min(x, y, z) is z:
+            ugly.append(z)
+            k = k + 1
+        z = z + 1
+    print(ugly)
+    return ugly[-1]
+
+
+print(get_kthugly(50))
