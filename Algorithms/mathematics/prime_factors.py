@@ -14,13 +14,17 @@ def primefactors(num):
     from math import  sqrt, ceil
     primes = []
     n = num
-    while num > 1:
+    while num != 1:
         for i in range(2, ceil(sqrt(n))+1, 1):
             if num % i == 0:
                 num = num // i
                 primes.append(i)
+                print(i, num)
                 break
+        '''if num != 1:
+            primes.append(num)
+            num = num // num'''
     return primes
 
 
-print(primefactors(16904))
+print(primefactors(2113))
