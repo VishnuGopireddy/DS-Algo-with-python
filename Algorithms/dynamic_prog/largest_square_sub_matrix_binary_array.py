@@ -1,4 +1,4 @@
-#RBR interview prp
+#RBR interview prep
 #Finding largest square sub-matrix in a given binary matrix
 '''
 1 1 1 1
