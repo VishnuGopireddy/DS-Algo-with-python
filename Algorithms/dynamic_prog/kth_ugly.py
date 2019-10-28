@@ -15,23 +15,22 @@ def get_kthugly(kth):
     :param k: integer
     :return: kth ugly number
     '''
-    ugly = [1]
-    i2, i3, i5 = 0
-    next_2 = 2
-    next_3 = 3
-    next_5 = 5
-    #current = [ugly[i] * 2, ugly[i] * 3, ugly[i] * 5]
+    ugly = [0] * kth
+    i2, i3, i5 = 0, 0, 0
+    ugly[0] = 1
+    next_2, next_3, next_5 = 2, 3, 5
     for i in range(1, kth):
-        ugly.append(min(next_2, next_3, next_5))
+        ugly[i] = min(next_2, next_3, next_5)
         if ugly[i] == next_2:
-            next_2 = next_2 *
-        if min(x, y, z) is y:
-            ugly.append(y)
-            j = j + 1
-        if min(x, y, z) is z:
-            ugly.append(z)
-            k = k + 1
-        z = z + 1
+            i2 = i2 + 1
+            next_2 = ugly[i2] * 2
+        if ugly[i] == next_3:
+            i3 = i3 + 1
+            next_3 = ugly[i3] * 3
+        if ugly[i] == next_5:
+            i5 = i5 + 1
+            next_5 = ugly[i5] * 5
+
     print(ugly)
     return ugly[-1]
 
