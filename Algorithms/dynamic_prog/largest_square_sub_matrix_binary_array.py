@@ -36,6 +36,7 @@ def largest_sub_matrix(mat, size):
     '''
     sol = [[0 for i in range(size[1])] for j in range(size[0])]
     # display mat
+    print('Given matrix is:')
     display_mat(mat, size)
     print('----------------')
     max_sub = 0
@@ -59,4 +60,4 @@ def largest_sub_matrix(mat, size):
 size = (5,5)
 mat = [[1, 1, 1, 1, 1], [0, 1, 1, 1, 1], [1, 1, 1, 1, 1], [0, 1, 1, 0, 1], [0, 0, 1, 1, 1]]
 
-print (largest_sub_matrix(mat, size))
+print('Max possible square sub matrix with 1\'s is :',largest_sub_matrix(mat, size))
