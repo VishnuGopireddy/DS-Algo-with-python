@@ -38,20 +38,25 @@ def largest_sub_matrix(mat, size):
     # display mat
     display_mat(mat, size)
     print('----------------')
+    max_sub = 0
     for i in range(size[0]):
         for j in range(size[1]):
             if i == 0 or j == 0:
                 sol[i][j] = mat[i][j]
+                if mat[i][j] == 1:
+                    max_sub = 1
+
     for i in range(1, size[0]):
         for j in range(1, size[1]):
             if mat[i][j] == 1:
                 sol[i][j] = min(sol[i-1][j-1], sol[i][j-1], sol[i-1][j]) + 1
+                if sol[i][j] > max_sub:
+                    max_sub = sol[i][j]
             else:
                 sol[i][j] = 0
-
-    display_mat(sol,size)
+    return max_sub
 
 size = (5,4)
 mat = [[1, 1, 1, 1], [0, 0, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
 
-largest_sub_matrix(mat, size)
+print (largest_sub_matrix(mat, size))
