@@ -20,6 +20,7 @@ def display_mat(mat,size):
         print(' ')
 
 
+
 def longest_common_sub_seq(str1, str2):
     '''
     Computes longest common subsequence of str1 and str2
