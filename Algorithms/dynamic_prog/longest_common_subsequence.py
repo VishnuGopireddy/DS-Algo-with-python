@@ -36,6 +36,7 @@ def longest_common_sub_seq(str1, str2):
                 else:
                     sol[i][j] = max(sol[i-1][j], sol[i][j-1])
 
+
     #display_mat(sol, (len2+1, len1+1))
     return sol[-1][-1]
 
