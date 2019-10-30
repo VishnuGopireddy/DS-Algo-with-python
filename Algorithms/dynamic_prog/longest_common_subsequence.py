@@ -3,6 +3,8 @@
 '''
 Approach: Dynamic Program O(n^2)
 
+construct sol matrix. If str[i] = str[j] then sol[i][j] = sol[i-1][j-1] + 1
+                      else sol[i][j] = max(sol[i-1][j],sol[i][j-1])
 '''
 def display_mat(mat,size):
     '''
