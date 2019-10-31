@@ -14,16 +14,21 @@ Take left pointer and right pointer do swapping
 TIME: O(N)
 '''
 
+
+def seperate_zeros_ones(arr):
+    n = len(arr) - 1
+    l, r = 0, n
+    while l <= r:
+        if arr[l] == 0:
+            l = l + 1
+        if arr[r] == 1:
+            r = r - 1
+        else:
+            arr[l], arr[r] = arr[r], arr[l]
+            l = l + 1
+            r = r - 1
+    return arr
+
+
 arr = [1, 0, 0, 1, 1, 0, 1, 1, 0]
-n = len(arr) - 1
-l, r = 0, n
-while l <= r:
-    if arr[l] == 0:
-        l = l + 1
-    if arr[r] == 1:
-        r = r - 1
-    else:
-        arr[l], arr[r] = arr[r], arr[l]
-        l = l + 1
-        r = r - 1
-print(arr)
+print(seperate_zeros_ones(arr))
