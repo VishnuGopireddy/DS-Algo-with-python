@@ -11,11 +11,18 @@ Example: consider array in range (0,9)
 
 
 def counting(arr,low,high):
+    '''
+    Perform counting sort on the given array.
+    :param arr: integers
+    :param low: least number
+    :param high: higher number
+    :return: sorted array
+    '''
     sort = []
     count = [0 for i in range(low,high+1)]
     for i in arr:
         count[i] = count[i] + 1
-    print(count)
+
 
     j = 0
     for i in range(len(count)):
@@ -29,5 +36,4 @@ arr = [1, 4, 1, 2, 7, 5, 2]
 low = 0
 high = 9
 
-sort = counting(arr, low, high)
-print(sort)
+print(counting(arr, low, high))

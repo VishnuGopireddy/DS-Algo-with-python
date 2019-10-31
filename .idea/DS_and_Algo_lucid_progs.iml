@@ -2,6 +2,14 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/bit_manipulation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/dynamic_prog" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/greedy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/mathematics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/recursion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/sorting" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
