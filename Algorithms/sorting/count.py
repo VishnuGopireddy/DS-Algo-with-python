@@ -36,4 +36,4 @@ arr = [1, 4, 1, 2, 7, 5, 2]
 low = 0
 high = 9
 
-print(counting(arr, low, high))
+#print(counting(arr, low, high))

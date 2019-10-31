@@ -13,8 +13,17 @@ Approach 2:
 Take left pointer and right pointer do swapping
 TIME: O(N)
 '''
-from Algorithms.sorting.count import counting
 
 arr = [1, 0, 0, 1, 1, 0, 1, 1, 0]
-
-print(counting(arr, 0, 1))
+n = len(arr) - 1
+l, r = 0, n
+while l <= r:
+    if arr[l] == 0:
+        l = l + 1
+    if arr[r] == 1:
+        r = r - 1
+    else:
+        arr[l], arr[r] = arr[r], arr[l]
+        l = l + 1
+        r = r - 1
+print(arr)
