@@ -25,6 +25,5 @@ def seperate_even_odd(arr):
     return arr
 
 
-
 arr = [12,15,10,8,7,10,18,5,4,3,12,16]
 print(seperate_even_odd(arr))
