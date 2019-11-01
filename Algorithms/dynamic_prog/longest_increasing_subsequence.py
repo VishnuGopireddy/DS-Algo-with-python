@@ -25,18 +25,21 @@ def longest_increasing_subseq(arr):
     :return: Integer, wit longest increasing sub-sequence
     '''
     n = len(arr)
-    sol = [0 for i in range(n)]
+    sol = [1 for i in range(n)]
     for i in range(n):
+        print(sol)
         if i == 0:
             sol[0] = 1
         else:
             for j in range(0,i):
-                max_sub = 0
-                if arr[j] > arr[i]:
-                    if  sol[i] + 1 > max_sub:
-                        sol[j] = sol[i] + 1
+                max_sub = sol[i]
+                if arr[i] > arr[j]:
+                    temp = sol[j] + 1
+                    if temp > max_sub:
+                        sol[i] = temp
     return max(sol)
 
-arr = [2,10,13,15,3,11,12]
+#arr = [2,10,13,15,3,11,12]
+arr = [2,3,1,5,12,10,11]
 print(longest_increasing_subseq(arr))
 
