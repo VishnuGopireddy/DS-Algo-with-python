@@ -19,7 +19,6 @@ class circular:
             curr.next = new_node
             new_node.next = self.head
 
-
     def print_list(self):
         curr = self.head
         while curr.next is not self.head:
