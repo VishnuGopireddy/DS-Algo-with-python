@@ -5,4 +5,5 @@ Sol: {[], [1], [2], [1,2]}
 Approach:
 Back Tracking
 TIME : O(2^n)
+
 '''
