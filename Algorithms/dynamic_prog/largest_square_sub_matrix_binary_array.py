@@ -11,7 +11,6 @@ Approach 1 : (Brute Force) => O(N^4)
 2. Check weather a sub0matrix contain all 1's
 
 Approach 2 : Dynamic Programing +> O(n ^ 2)
-
 '''
 def display_mat(mat,size):
     '''
