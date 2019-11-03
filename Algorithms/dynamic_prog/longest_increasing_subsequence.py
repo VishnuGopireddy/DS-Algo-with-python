@@ -24,6 +24,7 @@ def longest_increasing_subseq(arr):
     :param str: string
     :return: Integer, wit longest increasing sub-sequence
     '''
+
     n = len(arr)
     sol = [1 for i in range(n)]
     for i in range(n):
@@ -39,7 +40,7 @@ def longest_increasing_subseq(arr):
                         sol[i] = temp
     return max(sol)
 
-
+`
 #arr = [2,10,13,15,3,11,12]
 arr = [2,3,1,5,12,10,11]
 print(longest_increasing_subseq(arr))
