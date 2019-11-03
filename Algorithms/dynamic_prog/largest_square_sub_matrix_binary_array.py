@@ -12,6 +12,7 @@ Approach 1 : (Brute Force) => O(N^4)
 
 Approach 2 : Dynamic Programing +> O(n ^ 2)
 '''
+
 def display_mat(mat,size):
     '''
     Display the given matrix
