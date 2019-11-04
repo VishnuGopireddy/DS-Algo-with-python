@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/mathematics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/recursion" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/sorting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/backtracking" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
