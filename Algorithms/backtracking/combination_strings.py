@@ -15,12 +15,13 @@ def permutations(s):
     l = []
     if n == 0 or n == 1:
         return []
-    else:
-        for i in range(n):
-            m = s[i]
-            rem_list = s[:i] + s[i+1:]
-            for p in permutations(rem_list):
-                l.append([m] + p)
-        return l
 
-print(permutations(name))
+    for i in range(n):
+        m = s[i]
+        rem_list = s[:i] + s[i+1:]
+        for p in permutations(rem_list):
+            l.append([m] + p)
+    return l
+
+for p in permutations(name):
+    print(p)
