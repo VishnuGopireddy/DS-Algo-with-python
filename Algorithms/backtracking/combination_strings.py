@@ -12,9 +12,12 @@ name = 'vishnu'
 
 def permutations(s):
     n = len(s)
-    l = []
-    if n == 0 or n == 1:
+
+    if n == 0:
         return []
+    if n == 1:
+        return[s]
+    l = []
 
     for i in range(n):
         m = s[i]
