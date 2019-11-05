@@ -10,21 +10,3 @@ Space: O(n)
 
 name = 'vishnu'
 
-def permutations(s):
-    n = len(s)
-
-    if n == 0:
-        return []
-    if n == 1:
-        return[s]
-    l = []
-
-    for i in range(n):
-        m = s[i]
-        rem_list = s[:i] + s[i+1:]
-        for p in permutations(rem_list):
-            l.append([m] + p)
-    return l
-
-for p in permutations(name):
-    print(p)
