@@ -5,7 +5,6 @@ Example: [12,15,10,8,7,10,18,5,4,3,12,16]
 Ans : [3, 15, 5, 7, 8, 10, 18, 10, 4, 12, 12, 16]
 Approach:
 Take left and right pointer. do swappings
-
 TIME: O(N)
 '''
 
