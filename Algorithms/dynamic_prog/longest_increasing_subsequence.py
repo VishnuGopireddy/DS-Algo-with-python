@@ -26,7 +26,6 @@ def longest_increasing_subseq(arr):
     '''
 
 
-
     n = len(arr)
     sol = [1 for i in range(n)]
     for i in range(n):
