@@ -16,6 +16,7 @@ def min_cost_ropes(ropes,n):
         n = n -1
     return cost
 
+
 kases = int(input())
 for kase in range(kases):
     n = int(input())

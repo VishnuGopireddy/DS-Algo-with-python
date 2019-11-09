@@ -6,6 +6,8 @@ How to maximize total profit if only one job can be scheduled at a time.
 TIME Complexity => O(nlogn) + O (n)
 '''
 
+
+
 def jobseq(arr):
     jobs = {i[2]:[i[0],i[1]] for i in arr}
     jobs = dict(sorted(jobs.items(),reverse=True))
