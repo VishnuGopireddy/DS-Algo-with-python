@@ -42,7 +42,6 @@ def longest_increasing_subseq(arr):
     return max(sol)
 
 
-
 #arr = [2,10,13,15,3,11,12]
 arr = [2,3,1,5,12,10,11]
 print(longest_increasing_subseq(arr))
