@@ -10,7 +10,6 @@ TIME: O(N)
 '''
 
 
-
 def seperate_even_odd(arr):
     n = len(arr) - 1
     l, r = 0, n
