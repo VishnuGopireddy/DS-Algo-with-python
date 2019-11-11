@@ -7,6 +7,7 @@ Expected Time Complexity: O(d)
 This can be solved using greedy algorithm
 '''
 
+
 kases = 3
 nums = [[9,2],[20,3],[63,3]]
 for i in nums:
