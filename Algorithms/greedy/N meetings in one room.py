@@ -8,5 +8,4 @@ end = [2, 4, 6, 7, 9, 9]
 
 def meeting(start,end):
     duration = {}
-
 meeting(start,end)
