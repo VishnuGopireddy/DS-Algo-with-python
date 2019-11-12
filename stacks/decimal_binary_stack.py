@@ -14,5 +14,3 @@ while num > 0:
 
 print("Binary of",num,"is",end='-->')
 print(s.get_items())
-
-
