@@ -1,6 +1,5 @@
 #Convert decimal number into a binary number using stack
 
-
 from stacks.stack import Stacks
 
 num = int(input("Enter a number to convert into binary:"))
