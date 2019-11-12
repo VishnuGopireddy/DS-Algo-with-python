@@ -2,6 +2,7 @@
 
 from stacks.stack import Stacks
 
+
 num = int(input("Enter a number to convert into binary:"))
 s = Stacks()
 #divide number with 2 and append the remainder to the stack till the num becomes zero
