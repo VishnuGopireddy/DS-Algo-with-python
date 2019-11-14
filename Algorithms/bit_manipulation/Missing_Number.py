@@ -10,6 +10,8 @@ Using XOR:
 3) XOR of X1 and X2 gives the missing number.
 '''
 
+
+
 def get_missing(arr):
     n = len(arr)
     x1, x2 = 1, arr[0]
