@@ -17,7 +17,6 @@ def gcd(a,b):
             return gcd(a-b,b)
         else:
             return  gcd(a,b-a)
-
         
 a = 36
 b = 13
