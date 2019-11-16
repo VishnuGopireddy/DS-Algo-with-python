@@ -18,6 +18,7 @@ def gcd(a,b):
         else:
             return  gcd(a,b-a)
 
+        
 a = 36
 b = 13
 print('GCD of %d and %d is %d' % (a, b, gcd(a, b)))
