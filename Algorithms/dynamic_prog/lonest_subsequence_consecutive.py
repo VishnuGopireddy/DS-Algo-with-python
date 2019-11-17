@@ -26,6 +26,5 @@ def longest_sub_consecutive_sequence(arr,n):
     longest = 0
     subseq = []
 
-
 arr = [10, 4, 3, 11, 13, 5, 6, 12, 7]
 n = len(arr)
