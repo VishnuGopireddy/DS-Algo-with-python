@@ -25,13 +25,6 @@ def longest_sub_consecutive_sequence(arr,n):
     processed = 0
     longest = 0
     subseq = []
-    while processed < n:
-        for i in range(n):
-            if dict[i] == False:
-               subseq.append(arr[i])
-
-            else:
-                pass
 
 
 arr = [10, 4, 3, 11, 13, 5, 6, 12, 7]
