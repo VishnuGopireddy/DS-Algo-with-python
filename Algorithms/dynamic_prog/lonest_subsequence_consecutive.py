@@ -16,5 +16,11 @@ Approach2: (Hash Table)
 2. For a given number in the hash table Check for the series and return longest sequence.
 TIme: O(n) + O(2n) + On()
 Space:  O(n)
-
 '''
+#approach 2
+
+def longest_sub_consecutive_sequence(arr,n):
+
+
+arr = [10, 4, 3, 11, 13, 5, 6, 12, 7]
+n = len(arr)

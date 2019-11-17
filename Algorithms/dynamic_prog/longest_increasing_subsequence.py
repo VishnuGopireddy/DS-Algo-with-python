@@ -25,7 +25,6 @@ def longest_increasing_subseq(arr):
     :return: Integer, wit longest increasing sub-sequence
     '''
 
-
     n = len(arr)
     sol = [1 for i in range(n)]
     for i in range(n):
