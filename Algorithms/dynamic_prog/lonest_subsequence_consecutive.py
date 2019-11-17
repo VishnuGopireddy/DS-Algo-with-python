@@ -20,6 +20,16 @@ Space:  O(n)
 #approach 2
 
 def longest_sub_consecutive_sequence(arr,n):
+    dict = {i: False for i in arr}
+    processed = 0
+    longest = 0
+    while processed < n:
+        for i in range(n):
+            if dict[i] == False:
+
+
+            else:
+                pass
 
 
 arr = [10, 4, 3, 11, 13, 5, 6, 12, 7]
