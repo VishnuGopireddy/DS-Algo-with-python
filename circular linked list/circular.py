@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 class circular:
     def __init__(self):
         self.head = None
