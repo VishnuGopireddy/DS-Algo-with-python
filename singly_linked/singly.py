@@ -87,7 +87,6 @@ class single_linked:
         else:
             print("Entered element can't be deleted")
 
-
     def find_item(self,item):
         '''
         Check wheater given element is present in the list or not
