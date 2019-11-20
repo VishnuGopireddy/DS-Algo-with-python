@@ -132,7 +132,6 @@ class single_linked:
         Reverses a linked list
         :return:
         '''
-
         curr = self.head
         prev = None
         up = curr.next
