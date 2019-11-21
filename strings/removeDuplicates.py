@@ -36,5 +36,6 @@ def removeDuplicates(st):
             dict[i] = 1
     return out
 
+
 s = 'abbcccdddd'
 print(removeDuplicates(s))
