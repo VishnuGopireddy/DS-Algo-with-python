@@ -3,6 +3,7 @@
 Example: 'abbcccddddeeeee'
 Output: 'abcde'
 
+
 Approach 1:
 1. create a new array to store output.
 2. add new chars to the output after comparing with previously inserted values
