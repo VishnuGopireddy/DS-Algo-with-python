@@ -34,6 +34,7 @@ class single_linked:
         temp.next = self.head
         self.head = temp
 
+        
     def insert_pos(self,item,pos):
         '''
         Insert at any arbitary position
@@ -86,7 +87,6 @@ class single_linked:
         else:
             print("Entered element can't be deleted")
 
-
     def find_item(self,item):
         '''
         Check wheater given element is present in the list or not
@@ -132,7 +132,6 @@ class single_linked:
         Reverses a linked list
         :return:
         '''
-
         curr = self.head
         prev = None
         up = curr.next

@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 class circular:
     def __init__(self):
         self.head = None
@@ -18,6 +19,7 @@ class circular:
                 curr = curr.next
             curr.next = new_node
             new_node.next = self.head
+
 
     def print_list(self):
         curr = self.head
