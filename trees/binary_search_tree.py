@@ -28,6 +28,7 @@ class BST:
         else:
             print("Value is already present in the tree")
 
+            
     def find(self,data):
         is_found = False
         if self.root.data is None:
