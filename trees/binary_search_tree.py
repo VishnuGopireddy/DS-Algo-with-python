@@ -14,7 +14,6 @@ class BST:
         else:
             self._insert(self.root,data)
 
-
     def _insert(self,curr,data):
         if data < curr.data:
             if curr.left is None:
